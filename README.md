@@ -1,2 +1,138 @@
 # index.html
 project by ankush
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+</head>
+<body>
+  <header style=" background-color:#222;
+      color: #fff;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;">
+    <h1> Ankush kishan pawar </h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li>
+           <a href="https://www.linkedin.com/in/ankush-pawar-426311399"
+             target="_blank"
+             rel="noopener noreferrer">
+             LinkedIn                
+             </a>
+         </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home">
+      <h1>Welcome to My Portfolio</h1>
+      <p>This is my personal portfolio website where I will showcase my skills, projects, and achievements.</p>
+    </section>
+
+    <section id="about">
+      <h2>About Me</h2>
+        <img
+          src="A:\internship\AN_PHOTO.jpg"
+          alt="Profile picture of Ankush pawar"
+          style="width:140px;height:140px;border-radius:60%;object-fit:cover;border:3px solid #222;"
+        >
+      <h3>Who I Am & my Interests</h3>
+      <p>
+        I am a BSC computer science student and aspiring web developer who enjoys building websites
+        using HTML, CSS, and JavaScript.
+        I am the student of BK Birla college (Empowered autonomous) kalyan west, which is affiliated to Mumbai university. 
+        I also have knowledge of python programming language and c++ programming language .
+        currently, I am learning more about front-end and back-end development.
+        now I am learning MYSQL database management system.My interests include web development, programming, and learning new technologies.
+        I am passionate about learning new technologies and improving my coding skills.
+        I am also working on improving my problem-solving skills through small projects.
+        I also have knowledge of python programming language and c++ programming language
+        My goal is to become a full-stack developer and create useful applications,
+        while continuing my studies and exploring career opportunities.
+      </p>
+
+      <h3> My Skills </h3>
+      <ol>
+         <li>HTML</li>
+         <li>CSS3</li>
+         <li>JavaScript</li>
+         <li>Python</li>
+         <li>C++</li>
+         <li>Basic knowledge of MYSQL</li>
+         <li>microsoft EXCEL</li>
+      </ol>
+    </section>
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <p>Feel free to reach out by filling this form.</p>
+
+      <form>
+        <div>
+          <label for="name">Full Name</label><br>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your full name"
+            required
+            minlength="3"
+          >
+        </div>
+        <div>
+          <label for="email">Email Address</label><br>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="example@mail.com"
+            required
+          >
+        </div>
+        <div>
+          <label for="phone">Phone Number</label><br>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="10-digit number"
+            required
+            pattern="[0-9]{10}"
+            title="Please enter a 10-digit phone number (numbers only)"
+          >
+        </div>
+        <div>
+          <label for="subject">Subject</label><br>
+          <input
+            type="text"
+            id="subject"
+            name="subject"
+            placeholder="What is this about?"
+            maxlength="60"
+          >
+        </div>
+        <div>
+          <label for="message">Message</label><br>
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Write your message here"
+            required
+            minlength="10"
+          ></textarea>
+        </div>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
